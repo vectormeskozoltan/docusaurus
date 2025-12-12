@@ -83,7 +83,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'Az én oldalam',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -92,8 +92,16 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            //to: '/docs/tutorials/intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'guideSidebar',
+            to: '/docs/guides/installation-guide',
+            position: 'left',
+            label: 'guides',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
