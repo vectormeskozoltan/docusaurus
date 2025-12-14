@@ -20,17 +20,18 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://vectormeskozoltan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/mesko-docusaurus/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
+  organizationName: 'vectormeskozoltan', // Usually your GitHub org/user name.
+  projectName: 'mesko-docusaurus', // Usually your repo name.
+  trailingSlash: false,
+  onBrokenLinks: 'ignore',//throw ez az alapértelmezett, és megszakítja a build folyamatot
+  //ignore': Teljesen figyelmen kívül hagyja a hibás linkeket. Nem ír ki sem figyelmeztetést, sem hibát, és a build sikeres lesz.
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
