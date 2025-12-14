@@ -114,15 +114,17 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            //to: '/docs/tutorials/intro',
             position: 'left',
             label: 'Tutorial',
           },
-                {
-        type: 'docSidebar', // Ha külön oldalsávot használsz az API-hoz
-        sidebarId: 'myApiSidebar', // Az API oldalsávjának ID-ja a sidebars.js-ből
-        label: 'Petstore API',
-        position: 'left',
-      },
+          {
+            type: 'docSidebar',
+            sidebarId: 'guideSidebar',
+            to: '/docs/guides/installation-guide',
+            position: 'left',
+            label: 'guides',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
