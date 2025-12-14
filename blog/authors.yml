@@ -23,3 +23,10 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+# Add your own authors here
+dr_torpe_pincser:
+  name: Törpe Pincser
+  title: Kutya vagyok
+  url: https://www.zooplus.hu/
+  image_url: https://www.zooplus.hu/magazin/wp-content/uploads/2019/02/T%C3%B6rpe-pincser.webp
