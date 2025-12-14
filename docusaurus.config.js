@@ -47,6 +47,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          docItemComponent: "@theme/ApiItem", // Az API elemek komponensei, add hozzá ezt a sort
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -74,6 +75,27 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi', // A plugin egyedi azonosítója
+        docsPluginId: 'classic',
+        config: {
+          petstore: {  // Egyedi azonosító az API doksinak
+            specPath: 'openapi/petstore-api.yaml', // Az OpenAPI fájl elérési útja
+            outputDir: 'docs/petstore', // A generált Markdown fájlok helye
+            sidebarOptions: {
+              groupPathsBy: 'tag',  // Csoportosítás tagek alapján az oldalsávban
+            },
+            // További opciók a plugin dokumentációja szerint
+          },
+        }
+      }
+    ]
+  ],
+  themes: ['docusaurus-theme-openapi-docs'],//ez a vége második beillesztésnek
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -83,7 +105,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Az én oldalam',
+        title: 'Állatos MÁJ site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
