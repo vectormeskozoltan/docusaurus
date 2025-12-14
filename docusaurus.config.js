@@ -125,6 +125,14 @@ const config = {
             position: 'left',
             label: 'guides',
           },
+          {
+        type: 'docSidebar', // Ha külön oldalsávot használsz az API-hoz
+        sidebarId: 'myApiSidebar', // Az API oldalsávjának ID-ja a sidebars.js-ből
+        label: 'Petstore API',
+        position: 'left',
+
+      },
+
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
