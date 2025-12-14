@@ -149,20 +149,20 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: '--=T u t o r i a l=--',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'C o m m u n i t y',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'S t a c k  O v e r f l o w',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'D i s c o r d',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
@@ -172,14 +172,14 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'M o r e',
             items: [
               {
-                label: 'Blog',
+                label: 'B l o g',
                 to: '/blog',
               },
               {
-                label: 'GitHub',
+                label: 'G i t H u b',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],
